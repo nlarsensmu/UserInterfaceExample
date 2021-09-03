@@ -1,0 +1,9 @@
+1. Is this new implementation more efficent?
+
+It is MORE efficent because our implementation will only load the image ONCE, whereas the previous implementation will load the image every time it is needed in the app. However, both implementation only load images once they are needed.
+
+2. Is this implementation more scalable?
+No, since we keep references of all the images it is less scalable, if there were a large set of images it would cost a lot of memory to load them all and keep references to them.
+
+3. If there were 1000 images in the assets file what would you change?
+We would not keep references to all of the images by getting rid of the dictionary and letting the memory get clean out once we are done with the image. Implementing something similar "lazy scrolling" for the all images page would also be a improvement. (By Lazy Scrolling we mean only loading the images that are on the screen and a little more in both directions).
